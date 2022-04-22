@@ -1,0 +1,47 @@
+body {
+  font-family:sans-serif;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+h1 {
+  color: slateGray;
+}
+
+h1 span {
+  font-size: 0.5rem;
+  color: #ff4b4b;
+}
+
+textarea {
+  width:100%;
+  font-size:2rem;
+}
+
+#p {
+  padding: 1rem 0.5rem;
+  overflow:scroll;
+  background: #ffffff;
+ /* color:#fff;*/
+  border: thick double #0b252fce;
+}
+
+main {
+  margin: 2rem 0rem;
+}
+
+button {
+  padding: 0.5rem;
+  background: slateGray;
+  color:white;
+  border:none;
+}
+
+button:hover {
+  cursor:pointer;
+}
+
+div {
+  
+  
+}

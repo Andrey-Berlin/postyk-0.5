@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+
+body{
+ /* background: #fecea81e;
+  display: flex;
+  flex-direction: column;
+/*   justify-content:center; 
+  align-items:center;
+  color: #2A363B;
+  font-family: 'Nova Mono', monospace;*/
+  padding: 0 10% 0 0;
+}
+
+h1, h2{
+  margin:0.3em;
+  text-align: center;
+}
+
+.in, .out{
+  width: 60%;
+  min-width: 500px;
+  /*border-radius: 50px;*/
+  margin: 20px 0 10px 0;
+  padding: 50px;
+  color: #2A363B;
+ /* font-family: 'Nova Mono', monospace;
+  font-size: inherit;*/
+}
+
+/*.in{
+  background: #ff847c2a;
+  resize:vertical;
+}*/
+
+/*.out{
+  background: #99b8982a;
+  resize:vertical;
+}*/
+
+/* ~~~~~ RESPONSIVE RULE FOR TINY VIEWPORTS */
+
+@media screen and (max-width: 600px) {
+	.in, .out{
+		min-width: initial;
+		width: calc(100% - 100px);
+	  padding:50px;
+	}
+}
+
+input {
+  
+  width: 50%;
+  height: 70px;
+  background: #0b4a598e;
+  text-align: center;
+  margin: 0 0 0 10%;
+  color: #fff;
+}
+
+#text{
+  
+  width: 70%;
+  height: 70px;
+  background: #44ceee52;
+  margin: 0 0 0 10%;
+}

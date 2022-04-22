@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>binary converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bin-text-bin.css">
+
+</head>
+<body>
+  <header>
+    <h1>Конвертер: bin-text-bin</h1>
+  </header>
+<!-- partial:index.partial.html -->
+<section>
+  
+
+<main id="main" data-mode="inputBinary">
+  <h2 id="heading"></h2>
+  <!---->
+  <input id="text" type="file" onchange="readfile(this.files)">
+  <br />
+  <hr />
+  <input id="save" type="button" value="Сохранить на диск" onclick="download()">
+  <br />
+  <hr />
+    <button id="clear">Очистить</button>
+    <button id="switch">Переключить</button>
+  <hr />  
+  <div id="example-box">
+  <p>Конвертировать из:</p>
+ 
+    <pre><code id="code-box-1"></code></pre>
+    в:
+    <pre><code id="code-box-2"></code></pre>
+  </div>
+   <hr />
+  <!---->
+  <textarea id="input"></textarea>
+
+   <hr />
+  <textarea id="output"></textarea>
+  
+  
+  <hr />
+  <input id="save" type="button" value="Сохранить на диск" onclick="download()">
+  <br />
+  <hr />
+  
+  
+   <hr />
+     <input class="copy" id="copy" type="button" value="Copy to Clipboard" onclick="copyToClip();" />
+  <hr />
+  <p id="p"><code id="output_p"></code></p>
+
+  
+  <hr />
+
+</main>
+</section>
+<footer>
+  
+</footer>
+<!-- partial -->
+  <script  src="./bin-text-bin.js"></script>
+
+</body>
+</html>

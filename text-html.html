@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Text to HTML entities</title>
+  <link rel="stylesheet" href="./text-html.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Преобразование текста в объекты HTML</h1>
+<!--h2>(for no good reason)</h2-->
+<hr />
+  <input id="text" type="file" onchange="readfile(this.files)">
+<br />
+<hr />
+<h2>Введите текст для кодирования:</h2>
+<textarea class="in" id="in">text to html-unicode</textarea>
+<br />
+<hr />
+
+<input class="go" id="go" type="button" value="Кодировать!" onclick="newTextIsHere();" />
+<br />
+<hr />
+<input id="save" type="button" value="Сохранить на диск" onclick="download()">
+<br />
+<hr />
+<h2>Результат кодирования:</h2>
+<textarea class="out" id="out">
+</textarea>
+<br />
+<hr />
+<input class="copy" id="copy" type="button" value="Copy to Clipboard" onclick="copyToClip();" />
+<br />
+<hr />
+<!-- partial -->
+  <script  src="./text-html.js"></script>
+
+</body>
+</html>
